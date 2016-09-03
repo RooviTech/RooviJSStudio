@@ -1,0 +1,21 @@
+apply plugin: "java"
+
+repositories {
+	mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+dependencies {
+
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = "1.12"
+}
